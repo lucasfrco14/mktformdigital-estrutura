@@ -1,0 +1,84 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Obrigado!</title>
+  <link rel="icon" href="favicon.png" type="image/png">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    html, body {
+      margin: 0;
+      padding: 0;
+      width: 100%;
+      height: 100%;
+      font-family: 'Inter', sans-serif;
+      background: url("background.jpg") no-repeat center center fixed;
+      background-size: cover;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      color: white;
+      text-align: center;
+    }
+
+    .message {
+      background-color: rgba(0, 0, 0, 0.6);
+      padding: 30px;
+      border-radius: 12px;
+      margin-bottom: 30px;
+      max-width: 90%;
+    }
+
+    .message h2 {
+      font-size: 2.2rem;
+      font-weight: 700;
+      margin-bottom: 10px;
+    }
+
+    .message p {
+      font-size: 1.25rem;
+      font-weight: 400;
+      margin: 0;
+    }
+
+    video {
+      width: 90%;
+      max-width: 720px;
+      border-radius: 12px;
+    }
+
+    @media (max-width: 768px) {
+      .message h2 {
+        font-size: 1.5rem;
+      }
+
+      .message p {
+        font-size: 1rem;
+      }
+
+      video {
+        width: 95%;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="message">
+    <h2>Obrigado!</h2>
+    <p>Entraremos em contato o mais rápido possível, assista com atenção o vídeo abaixo.<br>Ele contém instruções importantes sobre os próximos passos.</p>
+  </div>
+
+  <video controls autoplay muted playsinline>
+    <source src="video-boas-vindas.mp4" type="video/mp4">
+    Seu navegador não suporta vídeo HTML5.
+  </video>
+</body>
+</html>
+
